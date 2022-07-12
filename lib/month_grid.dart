@@ -41,7 +41,7 @@ class MonthGrid extends StatelessWidget {
   }
 
   Widget _buildMonthAndYearText() {
-    return Text(DateFormat(DateFormat.YEAR_MONTH).format(firstDay));
+    return Text(DateFormat(DateFormat.YEAR_MONTH, "en").format(firstDay));
   }
 
   Widget _buildGrid(BuildContext context) {

@@ -7,7 +7,7 @@ class DatePickingLogic {
   static DateTime previousSunday(DateTime time) {
     DateTime result = time;
 
-    while (DateFormat(DateFormat.WEEKDAY).format(result) != 'Sunday') {
+    while (DateFormat(DateFormat.WEEKDAY, "en").format(result) != 'Sunday') {
       result = result.subtract(_oneDay);
     }
 
